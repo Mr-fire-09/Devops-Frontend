@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
-        /* Base Styles and Google Fonts Import */
+        /* Base Styles and Google Fonts Import (UNCHANGED) */
         :root {
             --primary-color: #3f51b5; /* Indigo */
             --secondary-color: #7c4dff; /* Deep Purple */
@@ -33,7 +33,7 @@
             color: var(--text-light);
             line-height: 1.6;
             scroll-behavior: smooth;
-            overflow-x: hidden; /* Prevents horizontal scroll from animations */
+            overflow-x: hidden;
         }
 
         a {
@@ -50,7 +50,7 @@
             color: var(--accent-color);
         }
 
-        /* Global Section Styling */
+        /* Global Section Styling (UNCHANGED) */
         .content-section {
             padding: 80px 5%;
             min-height: 100vh;
@@ -97,7 +97,7 @@
             margin-bottom: 15px;
         }
 
-        /* Navbar */
+        /* Navbar (UNCHANGED) */
         .header {
             position: sticky;
             top: 0;
@@ -136,7 +136,7 @@
             padding: 5px 10px;
             border-radius: 5px;
             transition: background 0.3s ease;
-            color: var(--text-light); /* Ensure nav links are visible */
+            color: var(--text-light);
         }
 
         .nav-links a:hover {
@@ -144,7 +144,7 @@
             color: var(--accent-color);
         }
 
-        /* Hero Section */
+        /* Hero Section (UNCHANGED) */
         .hero-section {
             min-height: 90vh;
             display: flex;
@@ -156,11 +156,11 @@
             padding: 0 5%;
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
             position: relative;
-            overflow: hidden; /* For particle effect */
+            overflow: hidden;
         }
 
         .hero-content {
-            z-index: 1; /* Ensure content is above particles */
+            z-index: 1;
         }
 
         .hero-content h1 {
@@ -192,7 +192,7 @@
             background-color: #4dd0e1;
         }
 
-        /* Docker Flow Animation */
+        /* Docker Flow Animation (UNCHANGED) */
         .docker-flow {
             display: flex;
             justify-content: center;
@@ -246,7 +246,7 @@
             100% { transform: scale(1); }
         }
 
-        /* Docker Layers Diagram */
+        /* Docker Layers Diagram (UNCHANGED) */
         .docker-layers {
             display: flex;
             flex-direction: column;
@@ -271,10 +271,10 @@
             transition: transform 0.3s ease;
             border-left: 5px solid transparent;
         }
-        .layer:nth-child(1) { border-color: #e91e63; } /* Base OS */
-        .layer:nth-child(2) { border-color: #9c27b0; } /* Libraries */
-        .layer:nth-child(3) { border-color: #2196f3; } /* App Code */
-        .layer:nth-child(4) { border-color: var(--accent-color); } /* Writable Layer */
+        .layer:nth-child(1) { border-color: #e91e63; }
+        .layer:nth-child(2) { border-color: #9c27b0; }
+        .layer:nth-child(3) { border-color: #2196f3; }
+        .layer:nth-child(4) { border-color: var(--accent-color); }
 
         .layer:hover {
             transform: scale(1.02);
@@ -298,15 +298,15 @@
             color: #ccc;
         }
 
-        /* Lottie container */
+        /* Lottie container (UNCHANGED) */
         .lottie-container {
-            width: 300px; /* Adjust size as needed */
+            width: 300px;
             height: 300px;
             margin: 40px auto;
             display: block;
         }
 
-        /* CI/CD Pipeline */
+        /* CI/CD Pipeline (UNCHANGED) */
         .cicd-pipeline-container {
             display: flex;
             justify-content: center;
@@ -315,7 +315,7 @@
             margin: 60px auto;
             max-width: 1200px;
             flex-wrap: wrap;
-            position: relative; /* For progress bar */
+            position: relative;
         }
 
         .pipeline-stage {
@@ -343,7 +343,7 @@
             margin-bottom: 10px;
         }
 
-        /* Cool CSS Animation for stages */
+        /* Cool CSS Animation for stages (UNCHANGED) */
         @keyframes stage-activate {
             0% { transform: scale(1); box-shadow: none; }
             50% { transform: scale(1.05); box-shadow: 0 0 20px var(--accent-color); }
@@ -408,8 +408,8 @@
             transition: width 0.5s ease-out;
             box-shadow: 0 0 10px var(--accent-color);
             position: absolute;
-            bottom: -30px; /* Position below the stages */
-            left: 5%; /* Align with pipeline container width */
+            bottom: -30px;
+            left: 5%;
             right: 5%;
             max-width: 90%;
         }
@@ -417,7 +417,7 @@
         .stage-log-output {
             position: absolute;
             background-color: rgba(0, 0, 0, 0.85);
-            color: #00ff00; /* Green text for logs */
+            color: #00ff00;
             padding: 10px 15px;
             border-radius: 5px;
             font-family: 'Consolas', 'Monaco', monospace;
@@ -434,7 +434,7 @@
         }
 
 
-        /* GitHub Actions */
+        /* GitHub Actions (UNCHANGED) */
         .code-card {
             flex: 1 1 500px;
         }
@@ -458,8 +458,8 @@
         }
 
         .yaml-code {
-            background-color: #0d1117; /* GitHub Dark theme background */
-            color: #c9d1d9; /* Light text */
+            background-color: #0d1117;
+            color: #c9d1d9;
             padding: 15px;
             border-radius: 8px;
             white-space: pre-wrap;
@@ -470,7 +470,7 @@
             border-left: 5px solid var(--accent-color);
         }
 
-        /* GitHub Actions Flow Diagram */
+        /* GitHub Actions Flow Diagram (UNCHANGED) */
         .actions-flow-diagram {
             display: flex;
             justify-content: center;
@@ -506,7 +506,7 @@
         }
 
 
-        /* Kubernetes Architecture */
+        /* Kubernetes Architecture (UNCHANGED) */
         .kubernetes-arch {
             margin-top: 80px;
             display: flex;
@@ -548,7 +548,7 @@
         }
         .pod {
             position: absolute;
-            background-color: #6a1b9a; /* Deep purple */
+            background-color: #6a1b9a;
             border-radius: 50%;
             width: 30px;
             height: 30px;
@@ -571,7 +571,7 @@
             100% { transform: translateY(0); }
         }
 
-        /* More DevOps Tools */
+        /* More DevOps Tools (UNCHANGED) */
         .tools-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -612,7 +612,7 @@
             color: #a0a0a0;
         }
 
-        /* Learning Resources Section */
+        /* Learning Resources Section (UNCHANGED) */
         .resource-card {
             background-color: var(--card-bg);
             padding: 25px;
@@ -652,7 +652,7 @@
             font-size: 0.9em;
         }
 
-        /* Cloud Cost Estimator */
+        /* Cloud Cost Estimator (UNCHANGED) */
         .cost-estimator {
             background-color: var(--card-bg);
             padding: 30px 40px;
@@ -685,9 +685,9 @@
             font-size: 1.5em;
         }
 
-        /* --- Linux Command Simulator (New) --- */
+        /* --- Linux Command Simulator (UNCHANGED) --- */
         .linux-simulator {
-            background-color: #0d1117; /* GitHub Dark */
+            background-color: #0d1117;
             border-radius: 10px;
             box-shadow: 0 10px 30px var(--shadow-color);
             max-width: 800px;
@@ -711,13 +711,13 @@
             height: 12px;
             border-radius: 50%;
         }
-        .terminal-header::before { background-color: #ff5f56; } /* Red */
-        .terminal-header::after { background-color: #ffbd2e; } /* Yellow */
+        .terminal-header::before { background-color: #ff5f56; }
+        .terminal-header::after { background-color: #ffbd2e; }
         .terminal-header span {
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background-color: #27c93f; /* Green */
+            background-color: #27c93f;
         }
         .terminal-body {
             padding: 20px;
@@ -747,7 +747,7 @@
             font-size: 1em;
         }
 
-        /* --- Video Hub Section (New) --- */
+        /* --- Video Hub Section (UNCHANGED) --- */
         .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -761,7 +761,7 @@
         }
         .video-embed {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             height: 0;
         }
         .video-embed iframe {
@@ -778,7 +778,7 @@
             color: var(--accent-color);
         }
 
-        /* Interactive Timeline Widget */
+        /* Interactive Timeline Widget (UNCHANGED) */
         .timeline-widget {
             margin-top: 80px;
             padding: 40px 20px;
@@ -833,7 +833,7 @@
             to { background-position: -100px 0; }
         }
 
-        /* Floating Chatbot Placeholder */
+        /* Floating Chatbot Placeholder (UNCHANGED) */
         .chatbot-placeholder {
             position: fixed;
             bottom: 30px;
@@ -861,7 +861,7 @@
             color: var(--bg-dark);
         }
 
-        /* Chatbot Modal */
+        /* Chatbot Modal (UNCHANGED) */
         .chatbot-modal {
             display: none;
             position: fixed;
@@ -1008,7 +1008,7 @@
             }
         }
 
-        /* Quiz Widget */
+        /* Quiz Widget (UNCHANGED) */
         .quiz-button {
             display: block;
             width: fit-content;
@@ -1099,12 +1099,12 @@
             border-color: var(--accent-color);
         }
         .quiz-options button.correct {
-            background-color: #28a745; /* Green for correct */
+            background-color: #28a745;
             border-color: #28a745;
             color: white;
         }
         .quiz-options button.incorrect {
-            background-color: #dc3545; /* Red for incorrect */
+            background-color: #dc3545;
             border-color: #dc3545;
             color: white;
         }
@@ -1119,14 +1119,14 @@
             color: var(--accent-color);
         }
 
-        /* Particle background for hero */
+        /* Particle background for hero (UNCHANGED) */
         .particles {
             position: absolute;
             width: 100%;
             height: 100%;
             top: 0;
             left: 0;
-            pointer-events: none; /* Allow interaction with content below */
+            pointer-events: none;
             z-index: 0;
         }
 
@@ -1155,7 +1155,7 @@
         .particle:nth-child(7) { top: 80%; left: 15%; width: 9px; height: 9px; animation-delay: 8s; animation-duration: 27s; }
 
 
-        /* Footer */
+        /* Footer (UNCHANGED) */
         .footer {
             background-color: var(--bg-light);
             color: #aaa;
@@ -1208,7 +1208,7 @@
             opacity: 0.5;
         }
 
-        /* Back to Top Button */
+        /* Back to Top Button (UNCHANGED) */
         #back-to-top-btn {
             position: fixed;
             bottom: 20px;
@@ -1228,10 +1228,10 @@
             visibility: hidden;
             transform: translateY(20px);
             transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
-            z-index: 998; /* Below chatbot icon */
+            z-index: 998;
         }
 
-        /* Scroll-triggered Animations (Initial State) */
+        /* Scroll-triggered Animations (UNCHANGED) */
         .slide-up, .fade-in {
             opacity: 0;
             visibility: hidden;
@@ -1242,14 +1242,14 @@
             transform: translateY(50px);
         }
 
-        /* Delays for staggered effect */
+        /* Delays for staggered effect (UNCHANGED) */
         .delay-1 { transition-delay: 0.1s; }
         .delay-2 { transition-delay: 0.2s; }
         .delay-3 { transition-delay: 0.3s; }
         .delay-4 { transition-delay: 0.4s; }
         .delay-5 { transition-delay: 0.5s; }
 
-        /* Scroll-triggered Animations (Active State) */
+        /* Scroll-triggered Animations (Active State) (UNCHANGED) */
         .animated.slide-up {
             opacity: 1;
             visibility: visible;
@@ -1261,7 +1261,7 @@
             visibility: visible;
         }
 
-        /* Responsiveness */
+        /* Responsiveness (UNCHANGED) */
         @media (max-width: 900px) {
             .navbar {
                 flex-direction: column;
@@ -1329,7 +1329,7 @@
             }
         }
 
-        /* --- Welcome Screen Styles (New Addition) --- */
+        /* Welcome Screen Styles (UNCHANGED) */
         .welcome-overlay {
             position: fixed;
             top: 0;
@@ -1339,25 +1339,24 @@
             background: linear-gradient(-45deg, var(--bg-dark), var(--bg-light), var(--primary-color), var(--secondary-color));
             background-size: 400% 400%;
             animation: gradientBG 20s ease infinite;
-            z-index: 10000; /* Highest layer */
+            z-index: 10000;
             display: flex;
             justify-content: center;
             align-items: center;
             transition: opacity 0.5s ease, visibility 0.5s ease;
             backdrop-filter: blur(10px);
-            perspective: 1000px; /* For 3D tilt effect */
+            perspective: 1000px;
         }
 
         .welcome-content {
             text-align: center;
             max-width: 600px;
             padding: 40px;
-            background: var(--card-bg);
-            background: rgba(40, 40, 40, 0.7); /* Glassmorphism effect */
+            background: rgba(40, 40, 40, 0.7);
             border-radius: 20px;
             box-shadow: 0 10px 60px rgba(0, 0, 0, 0.7);
             border: 1px solid var(--border-color);
-            transition: transform 0.1s ease-out; /* For tilt effect */
+            transition: transform 0.1s ease-out;
         }
 
         .welcome-content h2 {
@@ -1369,7 +1368,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Typing cursor for h2 */
+        /* Typing cursor for h2 (UNCHANGED) */
         .typing-cursor {
             display: inline-block;
             width: 3px;
@@ -1406,7 +1405,7 @@
             }
         }
 
-        /* New styles for Google Login */
+        /* New styles for Google Login (UNCHANGED) */
         .welcome-divider {
             display: flex;
             align-items: center;
@@ -1444,11 +1443,11 @@
         }
         .google-login-button i {
             margin-right: 10px;
-            color: #DB4437; /* Google Red */
+            color: #DB4437;
             font-size: 1.2em;
         }
 
-        /* Staggered Animation for welcome content */
+        /* Staggered Animation for welcome content (UNCHANGED) */
         .welcome-content > * {
             animation: fadeInUp 0.7s backwards;
         }
@@ -1476,29 +1475,155 @@
         }
 
 
-        /* Background Gradient Animation */
+        /* Background Gradient Animation (UNCHANGED) */
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
 
-        /* Utility to hide the screen completely */
+        /* Utility to hide the screen completely (UNCHANGED) */
         .hidden {
             opacity: 0 !important;
             visibility: hidden !important;
         }
+
+        /* --- Git Simulation Styles (NEW) --- */
+        .git-simulation-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 50px;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .git-button-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .git-button-group button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-commit { background-color: #f79a29; color: var(--bg-dark); }
+        .btn-push { background-color: #2c974b; color: white; }
+        .btn-merge { background-color: #8957e5; color: white; }
+
+        .git-button-group button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .git-branches {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 250px;
+            position: relative;
+        }
+
+        .branch {
+            width: 150px;
+            text-align: center;
+            position: relative;
+        }
+
+        .branch h4 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .branch-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5px;
+            height: 100%;
+            background-color: var(--primary-color);
+            border-radius: 3px;
+        }
+
+        .commit-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            border: 3px solid var(--card-bg);
+            transition: top 0.5s ease;
+            z-index: 5;
+            box-shadow: 0 0 10px rgba(124, 77, 255, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7em;
+            font-weight: 700;
+            color: white;
+            opacity: 0;
+            visibility: hidden;
+            animation: commit-appear 0.3s forwards;
+        }
+
+        @keyframes commit-appear {
+            from { transform: translateX(-50%) scale(0.5); opacity: 0; }
+            to { transform: translateX(-50%) scale(1); opacity: 1; visibility: visible; }
+        }
+
+        .commit-message {
+            position: absolute;
+            top: 25px; /* Relative to the commit-dot */
+            left: 110%;
+            width: 150px;
+            text-align: left;
+            font-size: 0.8em;
+            color: #ccc;
+            white-space: nowrap;
+        }
+
+        .sim-log {
+            width: 100%;
+            background-color: #0d1117;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            min-height: 100px;
+            max-height: 200px;
+            overflow-y: auto;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .log-entry {
+            margin-bottom: 5px;
+            color: #c9d1d9;
+        }
+        .log-success { color: #2c974b; }
+        .log-info { color: #f79a29; }
+        .log-error { color: #dc3545; }
+
+
     </style>
 </head>
 <body>
     <div id="welcome-screen" class="welcome-overlay hidden">
         <div class="particles" aria-hidden="true" id="welcome-particles">
-            <!-- Particles will be generated by JS -->
-        </div>
+            </div>
         <div class="welcome-content">
             <i class="fas fa-server" style="font-size: 4em; color: var(--primary-color); margin-bottom: 20px;"></i>
             <h2 id="welcome-title"></h2>
-            <p>Your interactive journey to master **Docker, CI/CD, and Kubernetes** begins here. Click below to dive into the pipeline automation and container orchestration world!</p>
+            <p>Your interactive journey to master **Git, Docker, CI/CD, and Kubernetes** begins here. Click below to dive into the pipeline automation and container orchestration world!</p>
             <button id="start-journey-btn" class="cta-button" style="color: white; background-color: var(--secondary-color);">
                 Start Your DevOps Journey <i class="fas fa-rocket"></i>
             </button>
@@ -1514,6 +1639,7 @@
         <nav class="navbar" aria-label="Main Navigation">
             <div class="logo">DevOps<span class="highlight">.Edu</span></div>
             <ul class="nav-links">
+                <li><a href="#git">Git/GitHub</a></li>
                 <li><a href="#docker">Docker</a></li>
                 <li><a href="#cicd">CI/CD</a></li>
                 <li><a href="#github-actions">GitHub Actions</a></li>
@@ -1538,10 +1664,53 @@
         <div class="hero-content fade-in">
             <h1>Accelerate Your Development with <span class="highlight">DevOps</span></h1>
             <p>Explore the concepts, tools, and practices that bridge development and operations for faster, more reliable software delivery.</p>
-            <a href="#docker" class="cta-button" role="button">Start Learning <i class="fas fa-arrow-down"></i></a>
+            <a href="#git" class="cta-button" role="button">Start Learning <i class="fas fa-arrow-down"></i></a>
         </div>
     </section>
 
+    <section id="git" class="content-section">
+        <h2 class="section-title slide-up">🌳 Git & GitHub: Version Control Mastery</h2>
+        <div class="section-container">
+            <div class="info-card slide-up delay-1" style="flex: 1 1 350px;">
+                <h3>Git vs. GitHub</h3>
+                <p><strong>Git</strong> is a **Distributed Version Control System** (DVCS) installed locally on your machine. It tracks changes in your code over time, allowing you to revert to previous states.</p>
+                <p><strong>GitHub</strong> is a **cloud-based hosting service** for Git repositories. It provides the collaboration platform (pull requests, issues) for teams.</p>
+                <p style="margin-top: 15px;"><i class="fas fa-project-diagram" style="color: var(--secondary-color);"></i> **Git:** Local Track. <i class="fab fa-github" style="color: var(--accent-color); margin-left: 10px;"></i> **GitHub:** Remote Collaboration.</p>
+            </div>
+
+            <div class="info-card slide-up delay-2" style="flex: 1 1 350px;">
+                <h3>Interactive Git Workflow Simulation</h3>
+                <p>Simulate a developer's core workflow: **Commit**, **Push** to a remote branch, and **Merge** (Pull Request).</p>
+                <div class="git-simulation-container">
+                    <div class="git-button-group">
+                        <button class="btn-commit" id="git-commit-btn"><i class="fas fa-code-branch"></i> git commit</button>
+                        <button class="btn-push" id="git-push-btn" disabled><i class="fas fa-cloud-upload-alt"></i> git push</button>
+                        <button class="btn-merge" id="git-merge-btn" disabled><i class="fas fa-code-merge"></i> Merge</button>
+                    </div>
+
+                    <div class="git-branches">
+                        <div class="branch" id="local-branch">
+                            <h4>Local Branch (Dev)</h4>
+                            <div class="branch-line"></div>
+                            </div>
+                        <div class="branch" id="remote-branch">
+                            <h4>Remote Branch (Main)</h4>
+                            <div class="branch-line"></div>
+                            <div class="commit-dot" style="top: 20px; opacity: 1; visibility: visible; background-color: var(--accent-color);">
+                                <i class="fas fa-star" style="font-size: 0.6em;"></i>
+                            </div>
+                            <div class="commit-message" style="top: 25px; color: var(--accent-color);">Initial Commit</div>
+                        </div>
+                    </div>
+
+                    <div class="sim-log" id="git-sim-log">
+                        <div class="log-entry log-info">Click 'git commit' to start!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="section-divider">
     <section id="docker" class="content-section">
         <h2 class="section-title slide-up">🚀 Docker Overview: Containerize Everything</h2>
         <div class="section-container">
@@ -1942,6 +2111,7 @@ Type 'help' for a list of commands.</pre>
     <footer class="footer">
         <div class="footer-links">
             <h4>Quick Links</h4>
+            <a href="#git">Git</a> |
             <a href="#docker">Docker</a> |
             <a href="#cicd">CI/CD</a> |
             <a href="#kubernetes">Kubernetes</a> |
@@ -1974,14 +2144,12 @@ Type 'help' for a list of commands.</pre>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
-            /* --- Welcome Screen Logic (New Addition) --- */
+            /* --- Welcome Screen Logic (UNCHANGED) --- */
             const welcomeScreen = document.getElementById('welcome-screen');
             const startJourneyBtn = document.getElementById('start-journey-btn');
             const googleLoginBtn = document.getElementById('google-login-btn');
 
             // --- Enhanced Welcome Screen Animations ---
-
-            // 1. Typing effect for the title
             const welcomeTitle = document.getElementById('welcome-title');
             const titleText = 'Welcome to DevOps <span class="highlight">Explorer</span>';
             let charIndex = 0;
@@ -1989,7 +2157,6 @@ Type 'help' for a list of commands.</pre>
 
             function type() {
                 if (charIndex < titleText.length) {
-                    // Handle HTML tags
                     if (titleText[charIndex] === '<') {
                         const tagEnd = titleText.indexOf('>', charIndex);
                         welcomeTitle.innerHTML = titleText.substring(0, tagEnd + 1) + '<span class="typing-cursor"></span>';
@@ -1998,24 +2165,21 @@ Type 'help' for a list of commands.</pre>
                         welcomeTitle.innerHTML = titleText.substring(0, charIndex + 1) + '<span class="typing-cursor"></span>';
                         charIndex++;
                     }
-                    setTimeout(type, 70); // Typing speed
+                    setTimeout(type, 70);
                 } else {
-                    // Remove cursor after typing is done
                     welcomeTitle.innerHTML = titleText;
                 }
             }
 
-            // 2. 3D Tilt effect for the welcome card
             const welcomeContent = document.querySelector('.welcome-content');
             welcomeScreen.addEventListener('mousemove', (e) => {
                 const { clientX, clientY } = e;
                 const { offsetWidth, offsetHeight } = welcomeScreen;
-                const x = (clientX / offsetWidth - 0.5) * 30; // Tilt range
-                const y = (clientY / offsetHeight - 0.5) * -30; // Invert Y for natural feel
+                const x = (clientX / offsetWidth - 0.5) * 30;
+                const y = (clientY / offsetHeight - 0.5) * -30;
                 welcomeContent.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
             });
 
-            // 3. Generate particles for the welcome screen
             const welcomeParticlesContainer = document.getElementById('welcome-particles');
             for (let i = 0; i < 20; i++) {
                 const particle = document.createElement('div');
@@ -2028,40 +2192,33 @@ Type 'help' for a list of commands.</pre>
                 particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
                 welcomeParticlesContainer.appendChild(particle);
             }
-            // --- End Enhanced Animations ---
 
-            // Show the welcome screen initially (remove 'hidden' class)
             welcomeScreen.classList.remove('hidden');
 
-            // Function to hide the welcome screen on button click
             startJourneyBtn.addEventListener('click', () => {
-                // Start fade-out animation
                 welcomeScreen.style.opacity = '0';
-                // Remove the element from the DOM flow after the animation
                 setTimeout(() => {
                     welcomeScreen.classList.add('hidden');
-                    type(); // Start typing animation when screen is shown
+                    type();
                 }, 500);
             });
 
-            // Placeholder for Google Login
             googleLoginBtn.addEventListener('click', () => {
                 console.log('Google Sign-In button clicked. Initiating OAuth flow...');
                 alert('Google Sign-In is a demo feature. A full implementation requires a backend service.');
-                // In a real app, you would redirect to Google's OAuth endpoint here.
             });
 
-            setTimeout(type, 800); // Start typing after initial animations
+            setTimeout(type, 800);
             /* --- End Welcome Screen Logic --- */
 
-            /* --- Back to Top Button Logic (New) --- */
+            /* --- Back to Top Button Logic (UNCHANGED) --- */
             const backToTopBtn = document.getElementById('back-to-top-btn');
 
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 300) {
                     backToTopBtn.style.opacity = '1';
                     backToTopBtn.style.visibility = 'visible';
-                    backTotopBtn.style.transform = 'translateY(0)';
+                    backToTopBtn.style.transform = 'translateY(0)';
                 } else {
                     backToTopBtn.style.opacity = '0';
                     backToTopBtn.style.visibility = 'hidden';
@@ -2078,8 +2235,7 @@ Type 'help' for a list of commands.</pre>
             // Lottie Animation Integration
             const lottiePlayer = document.getElementById('lottie-docker');
             if (lottiePlayer) {
-                // You would replace this with a real Lottie JSON URL or embed JSON directly
-                lottiePlayer.setAttribute('src', 'https://assets8.lottiefiles.com/packages/lf20_tgs70a7z.json'); // Example Lottie URL
+                lottiePlayer.setAttribute('src', 'https://assets8.lottiefiles.com/packages/lf20_tgs70a7z.json');
                 lottiePlayer.setAttribute('background', 'transparent');
                 lottiePlayer.setAttribute('speed', '1');
                 lottiePlayer.setAttribute('loop', '');
@@ -2093,7 +2249,6 @@ Type 'help' for a list of commands.</pre>
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     const targetId = this.getAttribute('href');
-                    // Check if it's a real anchor link and not just '#'
                     if (targetId && targetId.length > 1 && document.querySelector(targetId)) {
                         e.preventDefault();
                         document.querySelector(targetId).scrollIntoView({
@@ -2106,17 +2261,15 @@ Type 'help' for a list of commands.</pre>
 
             // 2. Scroll-Triggered Animations (Intersection Observer)
             const observerOptions = {
-                root: null, // viewport
+                root: null,
                 rootMargin: '0px',
-                threshold: 0.1 // Trigger when 10% of element is visible
+                threshold: 0.1
             };
 
             const animateOnScroll = (entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('animated');
-                        // Optional: Stop observing once it's animated
-                        // observer.unobserve(entry.target);
                     }
                 });
             };
@@ -2133,7 +2286,6 @@ Type 'help' for a list of commands.</pre>
             const pipelineProgressBar = document.getElementById('pipeline-progress');
             let isPipelineRunning = false;
 
-            // Tooltip for general stage info
             const stageTooltip = document.createElement('div');
             stageTooltip.className = 'stage-tooltip';
             document.body.appendChild(stageTooltip);
@@ -2161,7 +2313,7 @@ Type 'help' for a list of commands.</pre>
                 const logOutput = stage.querySelector('.stage-log-output');
 
                 stage.addEventListener('mouseenter', (e) => {
-                    stage.classList.add('hovered'); // Add a class for specific hover styles
+                    stage.classList.add('hovered');
                     stageTooltip.textContent = infoText;
                     stageTooltip.style.opacity = '1';
                     stageTooltip.style.left = e.pageX + 15 + 'px';
@@ -2187,7 +2339,7 @@ Type 'help' for a list of commands.</pre>
                 pipelineProgressBar.style.width = '0%';
 
                 let currentStageIndex = 0;
-                const stageInterval = 1500; // Time for each stage animation
+                const stageInterval = 1500;
 
                 const runStage = () => {
                     if (currentStageIndex < stages.length) {
@@ -2195,36 +2347,31 @@ Type 'help' for a list of commands.</pre>
                         const logMessage = stage.getAttribute('data-log');
                         const logOutputDiv = stage.querySelector('.stage-log-output');
 
-                        // Deactivate previous stage's log if any
                         if (currentStageIndex > 0) {
                             stages[currentStageIndex - 1].querySelector('.stage-log-output').style.opacity = '0';
                             stages[currentStageIndex - 1].querySelector('.stage-log-output').style.visibility = 'hidden';
                         }
 
-                        // Activate current stage
                         stage.classList.add('activated');
                         logOutputDiv.textContent = logMessage;
                         logOutputDiv.style.opacity = '1';
                         logOutputDiv.style.visibility = 'visible';
                         logOutputDiv.style.left = '50%';
-                        logOutputDiv.style.transform = 'translateX(-50%) translateY(-100%)'; // Position above stage
+                        logOutputDiv.style.transform = 'translateX(-50%) translateY(-100%)';
 
-                        // Update progress bar
                         const progress = ((currentStageIndex + 1) / stages.length) * 100;
                         pipelineProgressBar.style.width = `${progress}%`;
 
                         currentStageIndex++;
                         setTimeout(() => {
-                            stage.classList.remove('activated'); // Deactivate animation after a short delay
+                            stage.classList.remove('activated');
                             runStage();
                         }, stageInterval);
                     } else {
-                        // Pipeline finished
                         setTimeout(() => {
                             pipelineProgressBar.style.width = '100%';
                             isPipelineRunning = false;
                             runPipelineBtn.disabled = false;
-                            // Hide last log output
                             stages[stages.length - 1].querySelector('.stage-log-output').style.opacity = '0';
                             stages[stages.length - 1].querySelector('.stage-log-output').style.visibility = 'hidden';
                             alert('CI/CD Pipeline Simulation Complete!');
@@ -2235,7 +2382,7 @@ Type 'help' for a list of commands.</pre>
                 runStage();
             });
 
-            // 4. More subtle hover animation for tool cards (already implemented)
+            // 4. More subtle hover animation for tool cards (UNCHANGED)
             document.querySelectorAll('.tool-card').forEach(card => {
                 card.addEventListener('mouseenter', () => {
                     card.style.transform = 'translateY(-5px) scale(1.02)';
@@ -2245,7 +2392,7 @@ Type 'help' for a list of commands.</pre>
                 });
             });
 
-            // 5. Quiz Widget Logic
+            // 5. Quiz Widget Logic (UNCHANGED)
             const quizButton = document.getElementById('open-quiz-btn');
             const quizModal = document.getElementById('quiz-modal');
             const quizCloseBtn = quizModal.querySelector('.quiz-close-btn');
@@ -2262,7 +2409,7 @@ Type 'help' for a list of commands.</pre>
                         "They ensure environment consistency from development to production.",
                         "They eliminate the need for host operating systems."
                     ],
-                    answer: 2 // Index of the correct option (0-indexed)
+                    answer: 2
                 },
                 {
                     question: "Which of these is NOT typically a stage in a CI/CD pipeline?",
@@ -2299,7 +2446,7 @@ Type 'help' for a list of commands.</pre>
             let selectedAnswers = new Array(quizData.length).fill(null);
 
             function renderQuiz() {
-                quizQuestionsContainer.innerHTML = ''; // Clear previous questions
+                quizQuestionsContainer.innerHTML = '';
                 quizData.forEach((q, qIndex) => {
                     const questionDiv = document.createElement('div');
                     questionDiv.className = 'quiz-question-block';
@@ -2321,12 +2468,10 @@ Type 'help' for a list of commands.</pre>
                         }
 
                         optionBtn.addEventListener('click', () => {
-                            // Deselect previous option for this question
                             optionsDiv.querySelectorAll('button').forEach(btn => {
                                 btn.classList.remove('selected');
                                 btn.setAttribute('aria-checked', 'false');
                             });
-                            // Select current option
                             optionBtn.classList.add('selected');
                             optionBtn.setAttribute('aria-checked', 'true');
                             selectedAnswers[qIndex] = oIndex;
@@ -2336,22 +2481,22 @@ Type 'help' for a list of commands.</pre>
                     questionDiv.appendChild(optionsDiv);
                     quizQuestionsContainer.appendChild(questionDiv);
                 });
-                quizResult.textContent = ''; // Clear previous results
-                submitQuizBtn.style.display = 'block'; // Show submit button
+                quizResult.textContent = '';
+                submitQuizBtn.style.display = 'block';
             }
 
             function showQuizModal() {
                 quizModal.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent scrolling background
+                document.body.style.overflow = 'hidden';
                 renderQuiz();
-                quizModal.focus(); // Focus the modal for accessibility
+                quizModal.focus();
                 quizButton.setAttribute('aria-expanded', 'true');
             }
 
             function hideQuizModal() {
                 quizModal.classList.remove('active');
-                document.body.style.overflow = ''; // Restore scrolling
-                selectedAnswers.fill(null); // Reset answers
+                document.body.style.overflow = '';
+                selectedAnswers.fill(null);
                 quizButton.setAttribute('aria-expanded', 'false');
             }
 
@@ -2360,7 +2505,7 @@ Type 'help' for a list of commands.</pre>
                 quizQuestionsContainer.querySelectorAll('.quiz-question-block').forEach((qBlock, qIndex) => {
                     const options = qBlock.querySelectorAll('.quiz-options button');
                     options.forEach((optionBtn, oIndex) => {
-                        optionBtn.disabled = true; // Disable buttons after submission
+                        optionBtn.disabled = true;
                         if (oIndex === quizData[qIndex].answer) {
                             optionBtn.classList.add('correct');
                         }
@@ -2375,10 +2520,27 @@ Type 'help' for a list of commands.</pre>
                 });
 
                 quizResult.textContent = `You scored ${score} out of ${quizData.length}!`;
-                submitQuizBtn.style.display = 'none'; // Hide submit button after scoring
+                submitQuizBtn.style.display = 'none';
             }
 
-            // Chatbot Functionality
+            quizButton.addEventListener('click', showQuizModal);
+            quizCloseBtn.addEventListener('click', hideQuizModal);
+            submitQuizBtn.addEventListener('click', submitQuiz);
+
+            quizModal.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    hideQuizModal();
+                }
+            });
+
+            quizModal.addEventListener('click', (e) => {
+                if (e.target === quizModal) {
+                    hideQuizModal();
+                }
+            });
+
+
+            // Chatbot Functionality (UNCHANGED)
             const openChatbotBtn = document.getElementById('open-chatbot-btn');
             const chatbotModal = document.getElementById('chatbot-modal');
             const chatCloseBtn = chatbotModal.querySelector('.chat-close-btn');
@@ -2402,20 +2564,18 @@ Type 'help' for a list of commands.</pre>
                 msgDiv.classList.add(sender === 'user' ? 'user-message' : 'bot-message');
                 msgDiv.textContent = text;
                 chatBody.appendChild(msgDiv);
-                chatBody.scrollTop = chatBody.scrollHeight; // Auto-scroll to bottom
-                return msgDiv; // Return the element for dynamic updates (like "thinking")
+                chatBody.scrollTop = chatBody.scrollHeight;
+                return msgDiv;
             }
 
-            // Encrypt API key (basic encryption - not for production use)
             function encryptApiKey(key) {
-                return btoa(key.split('').reverse().join('')); // Basic obfuscation
+                return btoa(key.split('').reverse().join(''));
             }
 
             function decryptApiKey(encryptedKey) {
                 return atob(encryptedKey).split('').reverse().join('');
             }
 
-            // Store encrypted API key
             const encryptedApiKey = encryptApiKey('AIzaSyB4h4sj1V8m0uXtO4TT2mc_60-D1qDpfmc');
 
             async function getBotResponse(question) {
@@ -2460,6 +2620,8 @@ Type 'help' for a list of commands.</pre>
                     return "CI/CD stands for Continuous Integration / Continuous Delivery. It's an automated process that takes code changes from commit to deployment, ensuring faster, more reliable releases.";
                 } else if (lowerCaseQ.includes('kubernetes') || lowerCaseQ.includes('k8s')) {
                     return "Kubernetes is a container orchestration system that automates the deployment, scaling, and management of containerized applications.";
+                } else if (lowerCaseQ.includes('git') || lowerCaseQ.includes('github') || lowerCaseQ.includes('version control')) {
+                    return "Git is a local version control system for tracking code changes, and GitHub is a web platform for hosting Git repositories and collaboration (like pull requests).";
                 } else if (lowerCaseQ.includes('hello') || lowerCaseQ.includes('hi')) {
                     return "Woof! (That means hello in dog-speak). What DevOps topic can I explain for you?";
                 }
@@ -2471,19 +2633,16 @@ Type 'help' for a list of commands.</pre>
                 if (!question) return;
 
                 addMessage(question, 'user');
-                chatInput.value = ''; // Clear input
+                chatInput.value = '';
 
-                // Show thinking indicator
                 const thinkingMsg = addMessage('', 'thinking-message');
                 thinkingMsg.textContent = 'Botty is thinking';
 
                 try {
-                    // Try to get response from API
                     const botAnswer = await getBotResponse(question);
                     chatBody.removeChild(thinkingMsg);
                     addMessage(botAnswer, 'bot');
                 } catch (error) {
-                    // Fallback to local responses if API fails
                     console.error('Error getting bot response:', error);
                     chatBody.removeChild(thinkingMsg);
                     const fallbackAnswer = getFallbackResponse(question);
@@ -2498,7 +2657,7 @@ Type 'help' for a list of commands.</pre>
                 }
             });
 
-            // Linux Command Simulator Logic
+            // Linux Command Simulator Logic (UNCHANGED)
             const terminalInput = document.getElementById('terminal-input');
             const terminalBody = document.getElementById('terminal-body');
             const fileSystem = {
@@ -2528,7 +2687,7 @@ Type 'help' for a list of commands.</pre>
 
                     switch (cmd) {
                         case 'help':
-                            printToTerminal('Available commands: help, ls, pwd, echo, clear');
+                            printToTerminal('Available commands: help, ls, pwd, echo, clear, cd [dir]');
                             break;
                         case 'ls':
                             printToTerminal(fileSystem[currentPath].join('  '));
@@ -2549,6 +2708,8 @@ Type 'help' for a list of commands.</pre>
                                 currentPath = '/home/devops/app';
                             } else if (args[0] === '..' && currentPath === '/home/devops/app') {
                                 currentPath = '/home/devops';
+                            } else if (args[0] === '..') {
+                                printToTerminal('cd: cannot go above home directory.');
                             } else {
                                 printToTerminal(`cd: no such file or directory: ${args[0]}`);
                             }
@@ -2561,7 +2722,7 @@ Type 'help' for a list of commands.</pre>
                 }
             });
 
-            // Cloud Cost Estimator Logic
+            // Cloud Cost Estimator Logic (UNCHANGED)
             const serversSlider = document.getElementById('servers');
             const storageSlider = document.getElementById('storage');
             const bandwidthSlider = document.getElementById('bandwidth');
@@ -2572,9 +2733,9 @@ Type 'help' for a list of commands.</pre>
             const totalCostOutput = document.getElementById('total-cost-output');
 
             const costFactors = {
-                server: 10,  // $10 per server/instance
-                storage: 0.1, // $0.10 per GB of storage
-                bandwidth: 0.05 // $0.05 per GB of bandwidth
+                server: 10,
+                storage: 0.1,
+                bandwidth: 0.05
             };
 
             function calculateCost() {
@@ -2591,25 +2752,146 @@ Type 'help' for a list of commands.</pre>
             }
 
             [serversSlider, storageSlider, bandwidthSlider].forEach(slider => slider.addEventListener('input', calculateCost));
-            calculateCost(); // Initial calculation
+            calculateCost();
 
-            quizButton.addEventListener('click', showQuizModal);
-            quizCloseBtn.addEventListener('click', hideQuizModal);
-            submitQuizBtn.addEventListener('click', submitQuiz);
 
-            // Close modal if escape key is pressed
-            quizModal.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    hideQuizModal();
+            // --- NEW: Git Simulation Logic ---
+            const commitBtn = document.getElementById('git-commit-btn');
+            const pushBtn = document.getElementById('git-push-btn');
+            const mergeBtn = document.getElementById('git-merge-btn');
+            const localBranchDiv = document.getElementById('local-branch');
+            const remoteBranchDiv = document.getElementById('remote-branch');
+            const gitSimLog = document.getElementById('git-sim-log');
+
+            let commitCount = 0;
+            let pushedCommits = 0;
+
+            function addGitLog(message, type = 'log-entry') {
+                const logEntry = document.createElement('div');
+                logEntry.className = `log-entry ${type}`;
+                logEntry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+                gitSimLog.prepend(logEntry); // Add to the top
+                // Clear old logs to prevent overflow
+                while (gitSimLog.children.length > 15) {
+                    gitSimLog.removeChild(gitSimLog.lastChild);
                 }
+            }
+
+            function createCommitDot(branchDiv, topPos, message, isLocal = true) {
+                const dot = document.createElement('div');
+                dot.className = 'commit-dot';
+                dot.style.top = `${topPos}px`;
+                dot.textContent = `C${commitCount}`;
+                if (!isLocal) {
+                    dot.style.backgroundColor = '#2c974b'; // Green for remote commits
+                    dot.style.boxShadow = '0 0 10px rgba(44, 151, 75, 0.5)';
+                }
+                
+                const msg = document.createElement('div');
+                msg.className = 'commit-message';
+                msg.textContent = message;
+
+                dot.appendChild(msg);
+                branchDiv.appendChild(dot);
+                
+                // Add a slight delay to the top transition for a "move" effect
+                setTimeout(() => {
+                    dot.style.transition = 'top 0.5s ease, opacity 0.3s ease, visibility 0.3s ease';
+                }, 10);
+
+                return dot;
+            }
+
+            commitBtn.addEventListener('click', () => {
+                commitCount++;
+                const topPos = 50 + (commitCount * 40); // Commit positions get lower
+                const message = `Feature update #${commitCount}`;
+                
+                // Remove the "Initial Commit" message box if it's the first real commit
+                if (commitCount === 1) {
+                    const initialCommitMsg = remoteBranchDiv.querySelector('.commit-message');
+                    if (initialCommitMsg) initialCommitMsg.remove();
+                }
+
+                createCommitDot(localBranchDiv, topPos, message);
+                addGitLog(`Committed C${commitCount}: "${message}"`, 'log-info');
+                pushBtn.disabled = false;
+                mergeBtn.disabled = true;
             });
 
-            // Prevent closing when clicking inside the content but not on close button
-            quizModal.addEventListener('click', (e) => {
-                if (e.target === quizModal) {
-                    hideQuizModal();
+            pushBtn.addEventListener('click', () => {
+                if (commitCount <= pushedCommits) {
+                    addGitLog('No new commits to push. Commit first!', 'log-error');
+                    return;
                 }
+
+                const commitsToPush = commitCount - pushedCommits;
+                addGitLog(`Pushing ${commitsToPush} new commit(s) to remote/main...`, 'log-info');
+                pushBtn.disabled = true;
+
+                // Simulate push
+                setTimeout(() => {
+                    // Move the commit dots from local to remote
+                    const localCommits = Array.from(localBranchDiv.querySelectorAll('.commit-dot'));
+                    
+                    localCommits.slice(pushedCommits).forEach((localDot, index) => {
+                        const topPos = 50 + ((pushedCommits + index + 1) * 40);
+                        
+                        // Create a corresponding dot on the remote branch
+                        const remoteDot = createCommitDot(remoteBranchDiv, localDot.style.top, localDot.querySelector('.commit-message').textContent, false);
+                        
+                        // Transition the remote dot to its final position
+                        setTimeout(() => {
+                            remoteDot.style.top = `${topPos}px`;
+                        }, 50);
+
+                        // Change the local commit color to show it's synced
+                        localDot.style.backgroundColor = '#2c974b';
+                    });
+
+                    pushedCommits = commitCount;
+                    addGitLog('Push successful! Commits now visible on GitHub.', 'log-success');
+                    mergeBtn.disabled = false; // Enable merge after push
+                }, 1000);
             });
+
+            mergeBtn.addEventListener('click', () => {
+                if (pushedCommits === 0) {
+                    addGitLog('Nothing to merge. Push your changes first!', 'log-error');
+                    return;
+                }
+                
+                addGitLog(`Creating Pull Request and Merging ${pushedCommits} commits...`, 'log-info');
+                mergeBtn.disabled = true;
+                pushBtn.disabled = true;
+                commitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    // Simulate a fast-forward merge by changing the remote branch head
+                    const localCommits = Array.from(localBranchDiv.querySelectorAll('.commit-dot'));
+                    const remoteCommits = Array.from(remoteBranchDiv.querySelectorAll('.commit-dot'));
+                    
+                    // The last local commit is the new HEAD
+                    const finalDot = localCommits[localCommits.length - 1];
+                    const finalTop = parseInt(finalDot.style.top.replace('px', ''));
+
+                    // Create the final merge commit dot
+                    const mergeDot = createCommitDot(remoteBranchDiv, finalTop + 40, `Merge Commit C${commitCount}`, false);
+                    mergeDot.textContent = 'M';
+                    mergeDot.style.backgroundColor = '#8957e5';
+                    mergeDot.style.boxShadow = '0 0 10px rgba(137, 87, 229, 0.8)';
+
+
+                    // Clear local branch
+                    localBranchDiv.innerHTML = '<h4>Local Branch (Dev)</h4><div class="branch-line"></div>';
+                    commitCount = 0;
+                    pushedCommits = 0;
+                    
+                    addGitLog('Merge successful! Local branch cleared for new work.', 'log-success');
+                    commitBtn.disabled = false;
+                }, 1500);
+            });
+            // --- End Git Simulation Logic ---
         });
     </script>
 </body>
